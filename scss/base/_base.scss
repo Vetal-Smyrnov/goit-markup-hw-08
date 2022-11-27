@@ -1,0 +1,17 @@
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--color-primary-text);
+    background-color: var(--color-primary-background);
+  }
+
+  .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .picture {
+    display: block;
+    margin: 0 auto;
+  }

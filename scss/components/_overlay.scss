@@ -1,0 +1,22 @@
+.overlay {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
+  &::before,
+  &::after {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+}

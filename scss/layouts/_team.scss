@@ -1,0 +1,139 @@
+.team__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team__title {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.team__subtitle {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--color-secondary-text);
+}
+
+.team__item {
+  padding: 30px 20px;
+  background-color: var(--color-white-text);
+}
+
+.team {
+  background-color: var(--color-secondary-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__card {
+  display: block;
+  background-color: var(--color-white-text);
+  width: 270px;
+  height: 428px;
+  margin-right: 0px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__card:nth-child(1) {
+  margin: 0 auto;
+}
+
+.team__card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team__icon {
+  display: flex;
+  gap: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  fill: var(--color-link);
+  transition: fill var(--time-delay);
+  .team__link:hover &,
+  .team__link:focus & {
+    fill: var(--color-white-text);
+  }
+}
+
+// .team__icon:hover,
+// .team__icon:focus {
+//   fill: var(--color-white-text);
+// }
+
+.team__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  border-radius: 50%;
+  transition: background-color var(--time-delay);
+}
+
+.team__link .team__icon {
+  transition: fill var(--time-delay);
+}
+
+.team__networks {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  list-style: none;
+  fill: var(--color-link);
+  &:focus {
+    background-color: var(--color-hero-button-background);
+  }
+}
+
+.team__networks {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  border-radius: 50%;
+  fill: var(--color-link);
+  transition: background-color var(--time-delay);
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent-text);
+  }
+}
+
+.team__networks .team__icon {
+  transition: fill var(--time-delay);
+}
